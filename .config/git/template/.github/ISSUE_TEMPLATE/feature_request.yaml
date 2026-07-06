@@ -1,0 +1,75 @@
+name: ✨ Feature Request
+description: Suggest a new feature or improvement.
+title: "[FEATURE] "
+labels:
+  - enhancement
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ Feature Request
+
+        Have an idea? We'd love to hear it! and Share your ideas with us 🚀
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🚨 Priority
+      options:
+        - Low
+        - Medium
+        - High
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: 🧩 Component
+      options:
+        - Frontend
+        - Backend
+        - API
+        - Database
+        - CLI
+        - Documentation
+        - Other
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 💡 Summary
+      placeholder: Describe the feature...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🤔 Problem
+      description: What problem does this solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 🚀 Proposed Solution
+      placeholder: Describe your solution...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 Alternatives
+      placeholder: Any alternative solutions?
+
+  - type: textarea
+    id: references
+    attributes:
+      label: 📎 References
+      placeholder: Mockups, links, screenshots...
+  - type: textarea
+    id: additional
+    attributes:
+      label: 📝 Additional Context

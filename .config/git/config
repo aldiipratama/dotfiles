@@ -1,0 +1,85 @@
+[user]
+	name = aldiipratama
+	email = paldi0013@gmail.com
+
+[init]
+	defaultBranch = main
+	templateDir = ~/.config/git/template
+
+[core]
+	editor = nvim --wait
+	autocrlf = input
+  safecrlf = warn
+  pager = delta
+
+[advice]
+	statusHints = false
+	addEmptyPathspec = false
+	pushNonFastForward = false
+
+[status]
+	branch = true
+	short = true
+	showStash = true
+	showUntrackedFiles = all
+
+[pull]
+	rebase = false
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+	default = current
+  	followTags = true
+
+[merge]
+	conflictstyle = zdiff3
+
+[rerere]
+	enabled = true
+
+[fetch]
+	prune = true
+
+[branch]
+	sort = -committerdate
+
+[tag]
+	sort = -taggerdate
+
+[color]
+	ui = auto
+
+[diff]
+	colorMoved = zebra
+	renames = copies
+	interHunkContext = 10
+
+[pager]  
+	branch = false
+	tag = false
+	diff = delta
+
+[rebase]
+  	autoStash = true
+	missingCommitsCheck = warn
+
+[log]
+  	abbrevCommit = true
+	graphColors = blue,yellow,cyan,magenta,green,red
+
+[interactive]
+  	diffFilter = delta --color-only
+  	singlekey = true
+
+# Third party
+[delta]
+  dark = true
+  navigate = true
+
+# URL shortcuts
+[url "git@github.com:aldiipratama/"]
+  	insteadOf = "me:"
+
+[url "git@github.com:"]
+  	insteadOf = "gh:"

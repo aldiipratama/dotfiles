@@ -1,0 +1,38 @@
+name: ❓ Question
+description: Ask a question about the project.
+title: "[QUESTION] "
+labels:
+  - question
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ❓ Question
+
+        Feel free to ask anything.
+        - Please check the documentation before creating a question.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: 📖 Question
+      placeholder: Ask your question...
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: 🧪 What Have You Tried?
+      placeholder: Tell us what you've already tried.
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📸 Logs / Screenshots
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 📝 Additional Context
+      placeholder: Logs, screenshots, links...
